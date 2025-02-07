@@ -10,7 +10,8 @@ import Kingfisher
 
 struct ContentView: View {
     
-    @ObservedObject var viewModel = BreedViewModel()
+    
+    @ObservedObject var viewModel = Factory.makeViewModel()
     @State var searchText: String = ""
     
     var breeds: [BreedModel] {
@@ -24,50 +25,63 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 178))], content: {
-                    ForEach(breeds, id: \.id) { breed in
-                        NavigationLink(destination: BreedDetailedView(breed: breed)) {
-                            breedView(breed: breed)
+                if breeds.isEmpty {
+                    if !searchText.isEmpty {
+                        VStack {
+                            Text("No cats found")
+                            Image("cat_placeholder")
                         }
-                        .padding(EdgeInsets(top: 7, leading: 7, bottom: 7, trailing: 7))
+                    } else {
+                        Text("Loading...")
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
                     }
-                })
-                .accessibilityIdentifier("Grid of Breeds")
+                } else {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 178))], content: {
+                        ForEach(breeds, id: \.id) { breed in
+                            NavigationLink(destination: BreedDetailedView(breed: breed)) {
+                                breedView(breed: breed)
+                            }
+                            .padding(EdgeInsets(top: 7, leading: 7, bottom: 7, trailing: 7))
+                        }
+                    })
+                    .accessibilityIdentifier("Grid of Breeds")
+                }
             }
             .navigationBarTitle(Text("Breeds Info App"), displayMode: .inline)
             .searchable(
                 text: $searchText,
                 placement: .navigationBarDrawer(displayMode: .automatic),
                 prompt: "Filter by breed name")
-            
-            HStack{
-                if (viewModel.pageNumber != 0) {
-                    Button("Previous <<") {
-                        viewModel.pageNumber -= 1
-                        viewModel.loadPage()
+            if !breeds.isEmpty {
+                HStack{
+                    if (viewModel.pageNumber != 0) {
+                        Button("Previous <<") {
+                            viewModel.pageNumber -= 1
+                            viewModel.loadPage()
+                        }
+                        .accessibilityIdentifier("Previous")
                     }
-                    .accessibilityIdentifier("Previous")
-                }
-                Spacer()
-                    .frame(width: 70);
-                Text("Page \(viewModel.pageNumber + 1)");
-                Spacer()
-                    .frame(width: 70);
-                
-                if (viewModel.pageNumber < 6) {
-                    Button(">> Next") {
-                        viewModel.pageNumber += 1
-                        viewModel.loadPage()
+                    Spacer()
+                        .frame(width: 70);
+                    Text("Page \(viewModel.pageNumber + 1)");
+                    Spacer()
+                        .frame(width: 70);
+                    
+                    if (viewModel.pageNumber < 6) {
+                        Button(">> Next") {
+                            viewModel.pageNumber += 1
+                            viewModel.loadPage()
+                        }
+                        .accessibilityIdentifier("Next")
                     }
-                    .accessibilityIdentifier("Next")
+                    
                 }
-                
             }
-        }.onAppear(){
-            viewModel.loadPage()
         }
+        
     }
     
     func breedView(breed: BreedModel) -> some View {

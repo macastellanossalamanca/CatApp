@@ -10,8 +10,12 @@ import Foundation
 class BreedViewModel: ObservableObject {
     @Published var breeds = [BreedModel]()
     var pageNumber = 0
+    var dataManager: DataManagerProtocol
     
-    var dataManager: DataManagerProtocol = NetworkDataManager()
+    init(dataManager: DataManagerProtocol) {
+        self.dataManager = dataManager
+        loadPage()
+    }
     
     func loadPage() {
         breeds = [BreedModel]()

@@ -27,7 +27,7 @@ final class ContentViewTests: XCTestCase {
         searchField.tap()
         searchField.typeText("Aegean")
         
-        // Assert: Check if "Maine Coon" appears in the filtered results
+        // Assert: Check if "Aegean" appears in the filtered results
         let filteredResult = app.staticTexts["Aegean"]
         XCTAssertTrue(filteredResult.waitForExistence(timeout: 2))
     }
@@ -87,7 +87,7 @@ final class ContentViewTests: XCTestCase {
         searchField.tap()
         searchField.typeText("Aegean")
         
-        // Assert: Check if "Maine Coon" appears in the filtered results
+        // Assert: Check if "Aegean" appears in the filtered results
         let filteredResult = app.staticTexts["Aegean"]
         XCTAssertTrue(filteredResult.waitForExistence(timeout: 2))
     }
@@ -110,5 +110,19 @@ final class ContentViewTests: XCTestCase {
         
         let filteredResult = app.staticTexts["Burmese"]
         XCTAssertTrue(filteredResult.waitForExistence(timeout: 2))
+    }
+    
+    func testSearchBarFiltersResultsWithNoResults() {
+        // Arrange: Find the search bar
+        let searchField = app.searchFields["Filter by breed name"]
+        XCTAssertTrue(searchField.exists)
+        
+        // Act: Type a breed name
+        searchField.tap()
+        searchField.typeText("Garfield")
+        
+        // Assert: Check if "Aegean" appears in the filtered results
+        let filteredResult = app.staticTexts["Garfield"]
+        XCTAssertFalse(filteredResult.waitForExistence(timeout: 2))
     }
 }

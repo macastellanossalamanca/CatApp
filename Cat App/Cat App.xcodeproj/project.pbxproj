@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64AD60C2D56C92B00A7F7D4 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64AD60B2D56C92400A7F7D4 /* Factory.swift */; };
 		B67F49B12D56524D00A9854A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67F49B02D56524D00A9854A /* XCTest.framework */; platformFilter = ios; };
 		B67F49B22D56527B00A9854A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67F49B02D56524D00A9854A /* XCTest.framework */; platformFilter = ios; };
 		B6F5D6982D51A0D200B99F7C /* Cat_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6972D51A0D200B99F7C /* Cat_AppApp.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B64AD60B2D56C92400A7F7D4 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		B64E78712D566B1B002CC575 /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 		B67F49B02D56524D00A9854A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B6F5D6942D51A0D200B99F7C /* Cat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 		B6F5D6C42D526E4400B99F7C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B64AD60B2D56C92400A7F7D4 /* Factory.swift */,
 				B6F5D6C92D52990300B99F7C /* NetworkDataManager.swift */,
 			);
 			path = Services;
@@ -333,6 +336,7 @@
 				B6F5D6C82D52966600B99F7C /* BreedViewModel.swift in Sources */,
 				B6F5D6D32D53B50B00B99F7C /* BreedDetailedView.swift in Sources */,
 				B6F5D6CD2D53048600B99F7C /* BusinessConstants.swift in Sources */,
+				B64AD60C2D56C92B00A7F7D4 /* Factory.swift in Sources */,
 				B6F5D6D02D53114F00B99F7C /* BusinessErrors.swift in Sources */,
 				B6F5D69A2D51A0D200B99F7C /* ContentView.swift in Sources */,
 				B6F5D6982D51A0D200B99F7C /* Cat_AppApp.swift in Sources */,
