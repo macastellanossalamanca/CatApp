@@ -34,6 +34,7 @@ struct ContentView: View {
                         .padding(EdgeInsets(top: 7, leading: 7, bottom: 7, trailing: 7))
                     }
                 })
+                .accessibilityIdentifier("Grid of Breeds")
             }
             .navigationBarTitle(Text("Breeds Info App"), displayMode: .inline)
             .searchable(
@@ -47,6 +48,7 @@ struct ContentView: View {
                         viewModel.pageNumber -= 1
                         viewModel.loadPage()
                     }
+                    .accessibilityIdentifier("Previous")
                 }
                 Spacer()
                     .frame(width: 70);
@@ -59,6 +61,7 @@ struct ContentView: View {
                         viewModel.pageNumber += 1
                         viewModel.loadPage()
                     }
+                    .accessibilityIdentifier("Next")
                 }
                 
             }
@@ -82,6 +85,7 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     .padding(EdgeInsets(top: 2, leading: 7, bottom: 7, trailing: 7))
                 imageView(url: imageURL)
+                    .accessibilityIdentifier("Cell Image")
             }
         }
     }

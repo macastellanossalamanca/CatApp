@@ -69,6 +69,7 @@ struct BreedDetailedView: View {
                     
                 }
             }
+            .accessibilityIdentifier("BreedDetailedView")
         }
     }
 }
