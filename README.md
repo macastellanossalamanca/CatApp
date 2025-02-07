@@ -18,3 +18,10 @@
 
 https://github.com/user-attachments/assets/ba0d4cd3-5492-4957-8aaa-be5b2d4824ed
 
+# Testing
+
+- Project Have tests for basic network functionalities and for basic UI navigation and views loading
+
+![Captura de pantalla 2025-02-07 a la(s) 11 39 17 a m](https://github.com/user-attachments/assets/240d60e4-8614-4964-93a1-2996ed0ed5a2)
+
+
