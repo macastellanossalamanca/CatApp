@@ -2,7 +2,7 @@
 //  Cat_AppApp.swift
 //  Cat App
 //
-//  Created by Sandra Salamanca on 3/02/25.
+//  Created by Miguel Castellanos on 3/02/25.
 //
 
 import SwiftUI

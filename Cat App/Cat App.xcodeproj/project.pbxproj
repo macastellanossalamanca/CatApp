@@ -11,9 +11,15 @@
 		B6F5D69A2D51A0D200B99F7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6992D51A0D200B99F7C /* ContentView.swift */; };
 		B6F5D69C2D51A0D300B99F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F5D69B2D51A0D300B99F7C /* Assets.xcassets */; };
 		B6F5D69F2D51A0D300B99F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F5D69E2D51A0D300B99F7C /* Preview Assets.xcassets */; };
-		B6F5D6A92D51A0D300B99F7C /* Cat_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6A82D51A0D300B99F7C /* Cat_AppTests.swift */; };
+		B6F5D6A92D51A0D300B99F7C /* Cat_AppNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6A82D51A0D300B99F7C /* Cat_AppNetworkingTests.swift */; };
 		B6F5D6B32D51A0D300B99F7C /* Cat_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6B22D51A0D300B99F7C /* Cat_AppUITests.swift */; };
-		B6F5D6B52D51A0D300B99F7C /* Cat_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6B42D51A0D300B99F7C /* Cat_AppUITestsLaunchTests.swift */; };
+		B6F5D6C62D52924900B99F7C /* BreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6C52D52924900B99F7C /* BreedModel.swift */; };
+		B6F5D6C82D52966600B99F7C /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6C72D52966600B99F7C /* BreedViewModel.swift */; };
+		B6F5D6CA2D52990300B99F7C /* NetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6C92D52990300B99F7C /* NetworkDataManager.swift */; };
+		B6F5D6CD2D53048600B99F7C /* BusinessConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6CC2D53048600B99F7C /* BusinessConstants.swift */; };
+		B6F5D6D02D53114F00B99F7C /* BusinessErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6CF2D53114F00B99F7C /* BusinessErrors.swift */; };
+		B6F5D6D32D53B50B00B99F7C /* BreedDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D6D22D53B50B00B99F7C /* BreedDetailedView.swift */; };
+		B6F5D6D72D53C7A600B99F7C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B6F5D6D62D53C7A600B99F7C /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +46,15 @@
 		B6F5D69B2D51A0D300B99F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F5D69E2D51A0D300B99F7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6F5D6A42D51A0D300B99F7C /* Cat AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6F5D6A82D51A0D300B99F7C /* Cat_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_AppTests.swift; sourceTree = "<group>"; };
+		B6F5D6A82D51A0D300B99F7C /* Cat_AppNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_AppNetworkingTests.swift; sourceTree = "<group>"; };
 		B6F5D6AE2D51A0D300B99F7C /* Cat AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F5D6B22D51A0D300B99F7C /* Cat_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_AppUITests.swift; sourceTree = "<group>"; };
-		B6F5D6B42D51A0D300B99F7C /* Cat_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6F5D6C52D52924900B99F7C /* BreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedModel.swift; sourceTree = "<group>"; };
+		B6F5D6C72D52966600B99F7C /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
+		B6F5D6C92D52990300B99F7C /* NetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataManager.swift; sourceTree = "<group>"; };
+		B6F5D6CC2D53048600B99F7C /* BusinessConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessConstants.swift; sourceTree = "<group>"; };
+		B6F5D6CF2D53114F00B99F7C /* BusinessErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessErrors.swift; sourceTree = "<group>"; };
+		B6F5D6D22D53B50B00B99F7C /* BreedDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F5D6D72D53C7A600B99F7C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +106,11 @@
 		B6F5D6962D51A0D200B99F7C /* Cat App */ = {
 			isa = PBXGroup;
 			children = (
+				B6F5D6C42D526E4400B99F7C /* Services */,
+				B6F5D6C32D51BCED00B99F7C /* Model */,
+				B6F5D6C22D51BCE200B99F7C /* View Model */,
+				B6F5D6C12D51BCAD00B99F7C /* View */,
 				B6F5D6972D51A0D200B99F7C /* Cat_AppApp.swift */,
-				B6F5D6992D51A0D200B99F7C /* ContentView.swift */,
 				B6F5D69B2D51A0D300B99F7C /* Assets.xcassets */,
 				B6F5D69D2D51A0D300B99F7C /* Preview Content */,
 			);
@@ -113,7 +128,7 @@
 		B6F5D6A72D51A0D300B99F7C /* Cat AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6F5D6A82D51A0D300B99F7C /* Cat_AppTests.swift */,
+				B6F5D6A82D51A0D300B99F7C /* Cat_AppNetworkingTests.swift */,
 			);
 			path = "Cat AppTests";
 			sourceTree = "<group>";
@@ -122,9 +137,43 @@
 			isa = PBXGroup;
 			children = (
 				B6F5D6B22D51A0D300B99F7C /* Cat_AppUITests.swift */,
-				B6F5D6B42D51A0D300B99F7C /* Cat_AppUITestsLaunchTests.swift */,
 			);
 			path = "Cat AppUITests";
+			sourceTree = "<group>";
+		};
+		B6F5D6C12D51BCAD00B99F7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D6992D51A0D200B99F7C /* ContentView.swift */,
+				B6F5D6D22D53B50B00B99F7C /* BreedDetailedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6F5D6C22D51BCE200B99F7C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D6C72D52966600B99F7C /* BreedViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		B6F5D6C32D51BCED00B99F7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D6C52D52924900B99F7C /* BreedModel.swift */,
+				B6F5D6CC2D53048600B99F7C /* BusinessConstants.swift */,
+				B6F5D6CF2D53114F00B99F7C /* BusinessErrors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6F5D6C42D526E4400B99F7C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D6C92D52990300B99F7C /* NetworkDataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +192,9 @@
 			dependencies = (
 			);
 			name = "Cat App";
+			packageProductDependencies = (
+				B6F5D6D62D53C7A600B99F7C /* Kingfisher */,
+			);
 			productName = "Cat App";
 			productReference = B6F5D6942D51A0D200B99F7C /* Cat App.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +267,9 @@
 				Base,
 			);
 			mainGroup = B6F5D68B2D51A0D200B99F7C;
+			packageReferences = (
+				B6F5D6D52D53C7A600B99F7C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B6F5D6952D51A0D200B99F7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F5D6CA2D52990300B99F7C /* NetworkDataManager.swift in Sources */,
+				B6F5D6C62D52924900B99F7C /* BreedModel.swift in Sources */,
+				B6F5D6C82D52966600B99F7C /* BreedViewModel.swift in Sources */,
+				B6F5D6D32D53B50B00B99F7C /* BreedDetailedView.swift in Sources */,
+				B6F5D6CD2D53048600B99F7C /* BusinessConstants.swift in Sources */,
+				B6F5D6D02D53114F00B99F7C /* BusinessErrors.swift in Sources */,
 				B6F5D69A2D51A0D200B99F7C /* ContentView.swift in Sources */,
 				B6F5D6982D51A0D200B99F7C /* Cat_AppApp.swift in Sources */,
 			);
@@ -266,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F5D6A92D51A0D300B99F7C /* Cat_AppTests.swift in Sources */,
+				B6F5D6A92D51A0D300B99F7C /* Cat_AppNetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F5D6B32D51A0D300B99F7C /* Cat_AppUITests.swift in Sources */,
-				B6F5D6B52D51A0D300B99F7C /* Cat_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6F5D6D52D53C7A600B99F7C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6F5D6D62D53C7A600B99F7C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6F5D6D52D53C7A600B99F7C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6F5D68C2D51A0D200B99F7C /* Project object */;
 }
