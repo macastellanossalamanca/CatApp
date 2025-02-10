@@ -22,6 +22,9 @@ https://github.com/user-attachments/assets/d49c48ef-5768-4dd0-b50e-18944d727339
 ### Empty State View
 <img width="359" alt="Captura de pantalla 2025-02-07 a la(s) 7 00 51 p m" src="https://github.com/user-attachments/assets/bf8b2fe6-a42c-4058-ba6b-efd23c3474ea" />
 
+### API Error Response
+![Captura de pantalla 2025-02-10 a la(s) 4 34 01 p m](https://github.com/user-attachments/assets/80de6656-9dbd-493a-962b-af9d965c1b31)
+
 ### Running App
 https://github.com/user-attachments/assets/ba0d4cd3-5492-4957-8aaa-be5b2d4824ed
 
