@@ -28,10 +28,14 @@ struct ContentView: View {
         NavigationStack {
             ScrollView {
                 if breeds.isEmpty {
-                    if !searchText.isEmpty {
+                    if !viewModel.errorMessage.isEmpty {
                         VStack {
-                            Text("No cats found")
-                            Image("cat_placeholder")
+                            Text("There was an error fetching data. Please check your internet connection.")
+                                .frame(width: 300, alignment: .center)
+                            Image("network_error")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 200)
                         }
                     } else {
                         Text("Loading...")

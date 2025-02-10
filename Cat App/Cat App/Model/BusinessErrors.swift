@@ -17,3 +17,9 @@ enum DataSourceError: Error {
     case parsingDataError(String)
     case noData(String)
 }
+
+extension Error {
+    var localizedDescription: String {
+        return String(describing: self)
+    }
+}

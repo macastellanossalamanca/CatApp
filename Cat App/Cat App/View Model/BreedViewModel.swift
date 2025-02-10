@@ -9,6 +9,7 @@ import Foundation
 
 class BreedViewModel: ObservableObject {
     @Published var breeds = [BreedModel]()
+    var errorMessage = ""
     var pageNumber = 0
     var dataManager: DataManagerProtocol
     
@@ -24,6 +25,7 @@ class BreedViewModel: ObservableObject {
             case .success(let data):
                 self?.breeds = data
             case .failure(let error):
+                self?.errorMessage = error.localizedDescription
                 NSLog(error.localizedDescription)
             }
         }
